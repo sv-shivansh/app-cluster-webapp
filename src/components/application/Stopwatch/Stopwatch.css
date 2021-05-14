@@ -17,7 +17,7 @@
     background: transparent;
     max-width: 600px;
     width: 90%;
-    height: 500px;
+    height: auto;
     margin: 75px auto;
   }
   
@@ -70,22 +70,23 @@
     border-radius: 5px;
     padding: 12px 20px;
     font-size: 16px;
+    font-weight: 550;
     text-transform: uppercase;
     width: 150px;
     transition: background 0.3s;
     cursor: pointer;
   }
   .stopwatch .stopwatch-btn-red{
-    border: 2px solid #e23535;
+    border: 3px solid #e23535;
     color: #e23535;
   }
   .stopwatch .stopwatch-btn-yel{
-    border: 2px solid #ffc107;
+    border: 3px solid #ffc107;
     color: #ffc107;
   }
   
   .stopwatch .stopwatch-btn-gre{
-    border: 2px solid #0ab32f;
+    border: 3px solid #0ab32f;
     color: #0ab32f;
   }
   .stopwatch .stopwatch-btn-red:hover {
@@ -109,7 +110,6 @@
     top: 10px;
     position: relative;
     text-align: center;
-    padding-bottom: 50px;
   }
   
   .Heading {
