@@ -1,0 +1,53 @@
+.array-container{
+    padding: 5px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.array-bars{
+    border-radius: 2px 2px 0px 0px;
+    width: 8px;
+    display: inline-block;
+    margin: 0px 2px;
+    background-color: rgb(255, 0, 234);
+}
+
+.button-container{
+    top: 90%;
+    margin-left: 24%;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+button.visualizer{
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(177, 28, 28);
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+button.visualizer:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 0.2s ease;
+}
+
+.App {
+    margin: 10px;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
