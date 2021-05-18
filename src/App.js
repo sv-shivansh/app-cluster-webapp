@@ -4,9 +4,13 @@ import Landing from "./components/layout/Landing";
 import Stopwatch from "./components/application/Stopwatch/Stopwatch";
 import Sortingvisualizer from "./components/application/Sortingvisualizer/Sortingvisualizer"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./store";
+
 
 function App() {
   return (
+    <Provider store={store}>
     <Router>
       <Fragment>
         <Navbar />
@@ -19,6 +23,7 @@ function App() {
         </Switch>
       </Fragment>
     </Router>
+    </Provider>
   );
 }
 
