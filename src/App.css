@@ -1,24 +1,49 @@
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
-  *{
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-  }
-
-.logo a{
-  cursor: pointer;
-  margin-right: 750px;
-  font-family: 'RocknRoll One', sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  color: aliceblue;
-}
-.logo a:hover{
-  color: rgb(50, 39, 146);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-li, a{
+body{
+  background: url("./jeremy-bishop-G9i_plbfDgk-unsplash.jpg") no-repeat center
+    center fixed;
+  background-size: cover;
+}
+
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+
+}
+
+nav{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1%;
+}
+
+li,
+a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -26,58 +51,55 @@ li, a{
   text-decoration: none;
 }
 
-  header{
-    display: flex;
-    justify-content: flex-end;
-    padding: 15px 10px;
-    content: '';
-    align-items: center;
-    padding: 15px 10px;
-  }
-
-  .nav-links{
-      list-style: none;
-  }
-
-  .nav-links li {
-      display: inline-block;
-      padding: 0px 20px;
-  }
-
-  /* .nav-links li a{
-      transition: all 0.3s ease 0s;
-  } */
-
-  /* .nav-links li a:hover{
-    color: #0088a9;
-} */
-
-button{
-    padding: 9px 25px;
-    background-color: #181616;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all, 0.3s ease 0s;
+button {
+  padding: 9px 25px;
+  background-color: #181616;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all, 0.3s ease 0s;
 }
 
-button:hover{
+button:disabled{
+  cursor: not-allowed;
+}
+
+button:hover {
   color: #000000;
   background-color: rgba(155, 0, 0, 0.8);
 }
 
-.intro{
-  position: absolute;
-  top: 30%;
-  left: 27%;
-  font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 45px;
-  color: white
+.logo a {
+  cursor: pointer;
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: aliceblue;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+}
 
-body{
-    background: url('./jeremy-bishop-G9i_plbfDgk-unsplash.jpg') no-repeat center center fixed;
-    background-size: cover;
+.intro{
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.clock{
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f7f7f7;
+  font-size: 2.3em;
+  font-family: Orbitron;
+  letter-spacing: 7px;
 }

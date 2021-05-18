@@ -1,53 +1,63 @@
-.array-container{
-    padding: 5px 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin: 10px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.array-container {
+  display: flex;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 0px 50px;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.array-bars{
-    border-radius: 2px 2px 0px 0px;
-    width: 8px;
-    display: inline-block;
-    margin: 0px 2px;
-    background-color: rgb(255, 0, 234);
+.array-bars {
+  border-radius: 2px 2px 0px 0px;
+  width: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0px 2px;
+  background-color: rgb(255, 0, 234);
 }
 
-.button-container{
-    top: 90%;
-    margin-left: 24%;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
+.button-container {
+  display: flex;
+  width: 100%;
+  top: 90%;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
 }
 
-button.visualizer{
-    font-size: 15px;
-    font-weight: 600;
-    background-color: rgb(177, 28, 28);
-    color: white;
-    margin-left: 10px;
-    border-radius: 5px;
-    padding: 10px;
+button.visualizer:disabled {
+  cursor: not-allowed;
 }
-button.visualizer:hover{
-    background-color: rgb(255, 255, 255);
-    color: black;
-    transition: 0.2s ease;
+
+button.visualizer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #edf0f1;
+  text-decoration: none;
+  padding: 9px 20px;
+  background-color: #382828;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all, 0.3s ease 0s;
+  margin: 5px 10px;
+}
+button.visualizer:hover {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .App {
-    margin: 10px;
-    font-family: 'RocknRoll One', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
