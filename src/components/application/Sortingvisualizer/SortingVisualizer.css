@@ -61,3 +61,11 @@ button.visualizer:hover {
   justify-content: center;
   color: white;
 }
+
+input:disabled{
+  cursor: not-allowed;
+}
+
+label{
+  color: white
+}

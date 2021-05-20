@@ -17,7 +17,7 @@ export const quickSort = (array, DELAY) => async (dispatch) => {
         prevAnimation.push(animations[i].swapPivot)
       }
     }
-    console.log(prevAnimation);
+    // console.log(prevAnimation);
     setTimeout(() => {
         dispatch({
             type: SORTING_DONE,
