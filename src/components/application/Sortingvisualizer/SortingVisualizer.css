@@ -69,3 +69,29 @@ input:disabled{
 label{
   color: white
 }
+
+.speed-container, .size-container {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #edf0f1;
+  text-decoration: none;
+  padding: 9px 20px;
+  background-color: #382828;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all, 0.3s ease 0s;
+  margin: 5px 10px;
+}
+
+.speed-selector, .size-selector{
+  margin: 0 5px;
+}
+
+input{
+  cursor: pointer;
+
+}
