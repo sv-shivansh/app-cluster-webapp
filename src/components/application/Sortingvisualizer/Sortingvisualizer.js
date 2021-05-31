@@ -17,14 +17,22 @@ const Sortingvisualizer = ({
   mergeSort,
 }) => {
   useEffect(() => {
-    generateNewArray();
+    generateNewArray(arraySize);
   }, [generateNewArray]);
 
   const [delay, setDelay] = useState(10);
+  const [arraySize, setArraySize] = useState(100);
 
   const onChange = (e) => {
+    console.log(e.target.value);
     setDelay(e.target.value);
   };
+
+  const changeSize = (e) => {
+    console.log(e.target.value);
+    setArraySize(e.target.value);
+    generateNewArray(arraySize)
+  }
 
   async function BubbleSort() {
     bubbleSort(array.slice(), delay);
@@ -51,19 +59,56 @@ const Sortingvisualizer = ({
         ))}
       </div>
       <div className="button-container">
-        <label for="delay">Delay : </label>
+        <div className="size-container">
+        <label for="size">Size : </label>
         <input
           type="range"
-          id="delay"
+          id="size"
           min="10"
-          max="1000"
+          max="120"
+          defaultValue = {arraySize}
           disabled={isSorting}
-          onChange={(e) => onChange(e)}
+          onChange={(e) => changeSize(e)}
         ></input>
+        </div>
+        <div className="speed-container">
+          <div className="speed-selector">
+            <label for="name"> Speed:</label>
+            <input
+              type="radio"
+              name="speed"
+              value="500" 
+              onChange={(e) => onChange(e)}
+              disabled={isSorting}
+            />
+          </div>
+          <label for="500">Slow</label>
+          <div className="speed-selector">
+            <input
+              type="radio"
+              name="speed"
+              value="250"
+              onChange={(e) => onChange(e)}
+              disabled={isSorting}
+            />
+            <label for="250">Medium</label>
+          </div>
+          <div className="speed-selector">
+            <input
+              type="radio"
+              name="speed"
+              value="10"
+              defaultChecked="true"
+              onChange={(e) => onChange(e)}
+              disabled={isSorting}
+            />
+            <label for="10">Fast</label>
+          </div>
+        </div>
         <button
           className="visualizer"
           disabled={isSorting}
-          onClick={() => generateNewArray()}
+          onClick={() => generateNewArray(arraySize)}
         >
           Generate new Array
         </button>
